@@ -1,0 +1,76 @@
+.footer {
+    width: 70%;
+    margin: auto;
+    .footer__content {
+        .col-sm-9 {
+            .content_items {
+                padding: 30px 20px;
+                .footer_items {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 110px;
+                    li {
+                        flex: 25%;
+                        list-style-type: none;
+                        a {
+                            text-decoration: none;
+                            color: $color-blue;
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-sm-3 {
+            width: 25%;
+            .btn__group {
+                position: absolute;
+                top: 20%;
+                right: 20%;
+                button {
+                    width: 150px;
+                    text-align: center;
+                    border: 1px solid $color-gray-4;
+                    span {
+                        color: $color-gray-4;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+            ul {
+                li {
+                    a {
+                        color: $color-gray-4;
+                    }
+                }
+            }
+        }
+    }
+    .footer__copyright {
+        padding-bottom: 20px;
+        .footer__copyright__left {
+            .navbar-brand {
+                img {
+                    width: 120px;
+                }
+            }
+            p {
+                padding-top: 15px;
+                @include styleText($color-gray-4, $fs-1, $fw-normal);
+            }
+        }
+        .footer__copyright__right {
+            padding-top: 15px;
+            padding-left: 50rem;
+            a {
+                text-decoration: none;
+                p {
+                    @include styleText($color-blue, $fs-1, $fw-normal);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,135 @@
+.myStudents {
+    margin-top: $mg-2;
+    position: relative;
+    .student__content {
+        h3 {
+            @include styleText($color-black-light, $fs-0 + 4, $fw-normal);
+        }
+        width: 70%;
+        margin: auto;
+        .student__course {
+            a {
+                text-decoration: none;
+            }
+            .card:hover {
+                box-shadow: -5px 1px 8px 5px $color-gray-3;
+                img {
+                    opacity: 0.7;
+                    transition: all 0.5s;
+                }
+            }
+            .owl-nav {
+                display: block;
+                border: none;
+                .owl-prev {
+                    display: block;
+                    position: absolute;
+                    top: 30%;
+                    left: -2.6%;
+                    padding: 0;
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50% !important;
+                    -webkit-webkit: border radius 50% !important;
+                    -moz-webkit: border radius 50% !important;
+                    -ms-webkit: border radius 50% !important;
+                    -o-webkit: border radius 50% !important;
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+                    background-color: $color-white-0 !important;
+                    span {
+                        @include styleText($color-blue, $fs-4, $fw-normal);
+                        line-height: 0.5;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .owl-next {
+                    display: block;
+                    position: absolute;
+                    left: unset;
+                    position: absolute;
+                    top: 30%;
+                    right: -2.4%;
+                    padding: 0;
+                    height: 45px;
+                    width: 45px;
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+                    border-radius: 50% !important;
+                    -webkit-webkit: border radius 50% !important;
+                    -moz-webkit: border radius 50% !important;
+                    -ms-webkit: border radius 50% !important;
+                    -o-webkit: border radius 50% !important;
+                    background-color: $color-white-0 !important;
+                    span {
+                        @include styleText($color-blue, $fs-4, $fw-normal);
+                        line-height: 0.5;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+    .card-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        height: 42px;
+        @include styleText($color-black-0, $fs-0, $fw-bold);
+    }
+    .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        height: 42px;
+        @include styleText($color-gray-4, $fs-1, $fw-normal);
+    }
+    .rating {
+        display: flex;
+        .rating-stars {
+            @include styleText($color-yellow, $fs-1, $fw-normal);
+            margin-right: $mg-0;
+        }
+        span:nth-child(2) {
+            padding: 0 $pd-0;
+            @include styleText($color-gray-4, $fs-1, $fw-bold);
+        }
+        span:last-child {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+        }
+    }
+    .price {
+        text-align: right;
+        .old-price {
+            @include styleText($color-gray-4, $fs-1, $fw-normal);
+            text-decoration: line-through;
+        }
+        .new-price {
+            @include styleText($color-black-0, $fs-0, $fw-bold);
+        }
+    }
+}
+.best-saller {
+    top: 5%;
+    width: 90px;
+    height: 20px;
+    position: absolute;
+    text-align: left;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-color: $color-yellow;
+    p {
+        padding-top: $pd-0 -1;
+        padding-left: $pd-0;
+        text-transform: uppercase;
+        @include styleText($color-black-0, $fs-1 - 3, $fw-bold-1);
+    }
+}

@@ -1,0 +1,16 @@
+.partner {
+    padding-top: 70px;
+    background-color: $color-gray-5;
+    .partner_content {
+        width: 70%;
+        margin: auto;
+        .image_partner {
+            justify-content: space-between;
+        }
+        .partner_text {
+            padding-bottom: 40px;
+
+            @include styleText($color-gray-3, $fs-0, $fw-normal);
+        }
+    }
+}

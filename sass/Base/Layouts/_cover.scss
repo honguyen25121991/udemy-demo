@@ -1,0 +1,68 @@
+.udeCarousel {
+    background-image: url(../../../img/cover.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    .cover__content {
+        width: 25%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        h2 {
+            @include styleText($color-white-0, $fs-4, $fw-bold-1);
+        }
+        p {
+            @include styleText($color-white-0, $fs-2 - 2, $fw-normal);
+        }
+    }
+    .input-group {
+        .form-control {
+            background-color: $color-white-0;
+            border: none;
+            transition: none;
+            &:focus {
+                box-shadow: none;
+                background-color: $color-white-0;
+                border-top: 1px solid $color-gray-3;
+                border-left: 1px solid $color-gray-3;
+                border-bottom: 1px solid $color-gray-3;
+            }
+            &:focus + .input-group-append {
+                .input-group-text {
+                    background-color: $color-white-0;
+                    color: $color-red-0;
+                    border-top: 1px solid $color-gray-3;
+                    border-right: 1px solid $color-gray-3;
+                    border-bottom: 1px solid $color-gray-3;
+                }
+                &:hover {
+                    .input-group-text {
+                        color: $color-white-0;
+                        background-color: $color-red-0;
+                    }
+                }
+            }
+        }
+        &::placeholder {
+            font-size: $fs-2;
+            color: $color-gray-2;
+        }
+        .input-group-append {
+            margin-left: 0;
+            .input-group-text {
+                color: $color-red-0;
+                background-color: $color-white-0;
+                border: none;
+            }
+            &:hover {
+                .input-group-text {
+                    color: $color-white-0;
+                    background-color: $color-red-0;
+                }
+            }
+        }
+    }
+}

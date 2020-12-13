@@ -1,0 +1,30 @@
+.topCategories {
+    h4 {
+        padding-top: 20px;
+        @include styleText($color-black-0, $fs-2, $fw-bold);
+    }
+    width: 70%;
+    margin: auto;
+    a {
+        @include styleText($color-black-0, $fs-1, $fw-normal);
+        text-decoration: none;
+    }
+    // &:hover {
+    //     box-shadow: 3px 4px 1px 1px #cacbcc;
+    // }
+
+    .topCategories__item {
+        padding: 10px;
+        border: 1px solid $color-gray-3;
+        margin: 10px 0px;
+        box-shadow: 1px 1px 1px 1px $color-gray-3;
+    }
+
+    span {
+        font-size: 25px;
+        padding-right: 15px;
+    }
+    p {
+        padding-top: 6px;
+    }
+}

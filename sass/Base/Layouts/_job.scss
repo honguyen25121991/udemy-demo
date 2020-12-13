@@ -1,0 +1,24 @@
+.job {
+    background-color: $color-gray-5;
+    border-bottom: 1px solid $color-gray-3;
+    padding: 50px 0;
+    .job__content {
+        width: 100%;
+        margin: auto;
+        .job__student {
+            padding-top: 30px;
+            h4 {
+                @include styleText($color-black-light, $fs-2, $fw-bold-0);
+            }
+            p {
+                @include styleText($color-black-light, $fs-0, $fw-normal);
+                width: 50%;
+                left: 24%;
+                position: relative;
+            }
+            button {
+                border: none;
+            }
+        }
+    }
+}

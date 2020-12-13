@@ -1,0 +1,57 @@
+.myTab {
+    .tab-content {
+        .owl-carousel {
+            .owl-nav {
+                display: block;
+                .owl-prev {
+                    display: block;
+                    position: absolute;
+                    top: 30%;
+                    left: -2.5%;
+                    padding: 0;
+                    height: 45px;
+                    width: 45px;
+                    border-radius: 50% !important;
+                    -webkit-webkit: border radius 50% !important;
+                    -moz-webkit: border radius 50% !important;
+                    -ms-webkit: border radius 50% !important;
+                    -o-webkit: border radius 50% !important;
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+                    background-color: $color-white-0 !important;
+                    span {
+                        @include styleText($color-blue, $fs-4, $fw-normal);
+                        line-height: 0.5;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .owl-next {
+                    display: block;
+                    position: absolute;
+                    left: unset;
+                    position: absolute;
+                    top: 30%;
+                    right: -2.5%;
+                    padding: 0;
+                    height: 45px;
+                    width: 45px;
+                    box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+                    border-radius: 50% !important;
+                    -webkit-webkit: border radius 50% !important;
+                    -moz-webkit: border radius 50% !important;
+                    -ms-webkit: border radius 50% !important;
+                    -o-webkit: border radius 50% !important;
+                    background-color: $color-white-0 !important;
+                    span {
+                        @include styleText($color-blue, $fs-4, $fw-normal);
+                        line-height: 0.5;
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
